@@ -29,6 +29,8 @@ def post_new(request):
 
 def post_edit(request, pk):
     post = get_object_or_404(Post, pk=pk)
+    if not request.user.is_authenticated():
+        raise Http404
     if request.method == "POST":
         form = PostForm(request.POST, instance=post)
         if form.is_valid():

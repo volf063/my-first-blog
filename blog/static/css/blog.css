@@ -11,7 +11,7 @@
 }
 
 .content {
-    margin-left: 40px;
+    //margin-left: 40px;
 }
 
 h1, h2, h3, h4 {
@@ -19,6 +19,7 @@ h1, h2, h3, h4 {
 }
 
 .date {
+    padding-top: 30px;
     float: right;
     color: #828282;
 }
@@ -36,16 +37,25 @@ h1, h2, h3, h4 {
     float: right;
     font-size: 26pt;
     margin-right: 20px;
+    padding-top: 20px;
 }
 
 .post {
-    margin-bottom: 70px;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border: 1px solid black;
 }
 
 .post h1 a, .post h1 a:visited {
     color: #000000;
 }
 
-.edit {
-    left: 600px;
+.hr1 {
+    border: none; 
+    color: #8f8f8f; 
+    background-color: #8f8f8f; 
+    height: 1px; 
+    width: 97%;
 }
