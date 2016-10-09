@@ -3,7 +3,9 @@
     {% block content %}
         <h1>Edit Post</h1>
         <form method="POST" class="post-form">{% csrf_token %}
+        	<div class="post" style = "padding-top: 35px; padding-bottom: 40px;">
             {{ form.as_p }}
             <button type="submit" class="save btn btn-default">Save</button>
+       		</div>
         </form>
     {% endblock %}
